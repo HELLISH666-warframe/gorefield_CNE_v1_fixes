@@ -18,7 +18,7 @@ function create() {
 function postCreate() {
     var cameraStart = strumLines.members[curCameraTarget].characters[0].getCameraPosition();
     cameraStart.y -= 100; FlxG.camera.focusOn(cameraStart);
-    window.title = windowTitleGOREFIELD + " - " + PlayState.instance.SONG.meta.name;
+    window.title = windowTitleGOREFIELD + " - " + PlayState.SONG.meta.name;
 
     allowGitaroo = false;
 }

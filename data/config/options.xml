@@ -1,5 +1,5 @@
 <!DOCTYPE codename-mod-options>
-<menu name="Gorefield Options" desc="Modify gorefield mod options here">
+<menu name="Gorefield Options" desc="">
 	<menu name="Mechanics" desc="Configure gameplay mechanics.">
 		<checkbox id="baby" name="Baby Mode" desc="Enable/Disable Mechanics. (for pussys/super lowlife/small pp/poo poo eating BOZOS!) 
 		(NEW LOADING SCREEN JUST FOR YOU!!!! (huh i wonder if it has to due with babies or not...))" />

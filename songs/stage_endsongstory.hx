@@ -21,10 +21,10 @@ function postCreate(){
 
     switch(PlayState.storyWeek.name){case 'Code Songs...' | 'Cartoon World...' | 'Binky Circus...' | "Godfield's Will...": return;}
 
-    if (PlayState.isStoryMode && PlayState.storyWeek.songs[0].name.toLowerCase() != PlayState.instance.SONG.meta.name.toLowerCase()) // Makes sure it isnt the first song
-        setWeekProgress(PlayState.instance.SONG.meta.name);
+    if (PlayState.isStoryMode && PlayState.storyWeek.songs[0].name.toLowerCase() != PlayState.SONG.meta.name.toLowerCase()) // Makes sure it isnt the first song
+        setWeekProgress(PlayState.SONG.meta.name);
 
-    if (weekProgress.exists(PlayState.storyWeek.name) && actualWeekSongs.get(PlayState.storyWeek.name)[0].toLowerCase() == PlayState.instance.SONG.meta.name.toLowerCase()){ // Clear week progress if start over
+    if (weekProgress.exists(PlayState.storyWeek.name) && actualWeekSongs.get(PlayState.storyWeek.name)[0].toLowerCase() == PlayState.SONG.meta.name.toLowerCase()){ // Clear week progress if start over
         weekProgress.remove(PlayState.storyWeek.name);
         trace("Reset Progress For " + PlayState.storyWeek.name);
     }
@@ -37,7 +37,7 @@ function postCreate(){
 
 function onSongEnd(){
     if(PlayState.isStoryMode){
-        switch(PlayState.instance.SONG.meta.name.toLowerCase()){
+        switch(PlayState.SONG.meta.name.toLowerCase()){
             case 'bigotes':
                 if(FlxG.save.data.beatWeekG1) return;
 

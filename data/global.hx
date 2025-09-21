@@ -19,14 +19,6 @@ static var windowTitleGOREFIELD:String = "Friday Night Funkin': Gorefield V2";
 
 public static var weekProgress:Map<String, {song:String, weekMisees:Int, weekScore:Int, deaths:Int}> = [];
 
-static var redirectStates:Map<FlxState, String> = [
-    TitleState => "gorefield/TitleScreen",
-    MainMenuState => "gorefield/MainMenuScreen",
-    FreeplayState => "gorefield/StoryMenuScreen"
-    StoryMenuState => "gorefield/StoryMenuScreen",
-    BetaWarningState => "gorefield/LaguageSelectorScreen",
-];
-
 function new() {
     Handle.init([]);
 
@@ -107,10 +99,6 @@ function preStateSwitch() {
     if (Std.isOfType(FlxG.state, PlayState) && (FlxG.state.subState == null ? true : !Std.isOfType(FlxG.state.subState, GameOverSubstate) && !Std.isOfType(FlxG.state.subState, PauseSubState)) // ! CHECK IN GAME/NOT IN GAME OVER
         && Std.isOfType(FlxG.game._requestedState, PlayState) && PlayState.isStoryMode) // ! CHECK STORY MODE/ GOING TO OTHER SONG
         {FlxG.switchState(new ModState("gorefield/LoadingScreen")); return;} // LOADING SCREEN
-
-    for (redirectState in redirectStates.keys()) 
-        if (Std.isOfType(FlxG.game._requestedState, redirectState)) 
-            FlxG.game._requestedState = new ModState(redirectStates.get(redirectState));
 }
 
 function destroy() FlxG.camera.bgColor = 0xFF000000;

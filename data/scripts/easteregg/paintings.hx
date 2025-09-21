@@ -10,22 +10,22 @@ var positionMap:Map<String, Map<Int, {sprite:String, x:Int, y:Int, scale:Float}>
     "stage" => [2 => {sprite: "note1", x: 500, y: 200, scale: 0.5}],
     "hijon" => [2 => {sprite: "note1", x: 500, y: 200, scale: 0.5}],
     "pixelLasagna" => [
-        3 => {sprite: "Note_Green", x: 40, y: 440, scale: 1.7}
+        3 => {sprite: "Note_Green", x: 40, y: 440, scale: 1.7},
         4 => {sprite: "Note_Green", x: 470, y: 430, scale: 1.7}
     ],
     "newPixelLasagna" => [
-        5 => {sprite: "Note_Green", x: -280, y: -70, scale: 1.7}
+        5 => {sprite: "Note_Green", x: -280, y: -70, scale: 1.7},
         6 => {sprite: "Note_Green", x: 480, y: -70, scale: 1.7}
-    ]
+    ],
     "god" => [
-        7 => {sprite: "note2", x: 0, y: 480, scale: 0.5}
-        8 => {sprite: "note2", x: 210, y: 460, scale: 0.5}
-        9 => {sprite: "note2", x: 0, y: -220, scale: 0.6}
+        7 => {sprite: "note2", x: 0, y: 480, scale: 0.5},
+        8 => {sprite: "note2", x: 210, y: 460, scale: 0.5},
+        9 => {sprite: "note2", x: 0, y: -220, scale: 0.6},
         10 => {sprite: "note2", x: 520, y: -70, scale: 1}
-    ]
+    ],
     "patella" => [
         11 => {sprite: "note2", x: 180, y: 630, scale: 0.4}
-    ]
+    ],
     "cryfield" => [
         12 => {sprite: "note4", x: 800, y: 200, scale: 0.4}
     ]
