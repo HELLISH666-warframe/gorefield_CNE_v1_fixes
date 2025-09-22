@@ -109,7 +109,7 @@ function create()
     replaceCamera = true;
 
 
-    window.title = windowTitleGOREFIELD + " - " + PlayState.instance.SONG.meta.name + " - GAME OVER";
+    window.title = windowTitleGOREFIELD + " - " + PlayState.SONG.meta.name + " - GAME OVER";
 }
 
 function postCreate()
