@@ -16,7 +16,7 @@ var missSubtitle:String = "Convince Him.";
 var missSubtitleText:FunkinText;
 var missesLeftText:FunkinText;
 
-var isNocturnalMeow:Bool = PlayState.instance.SONG.meta.name == 'Nocturnal Meow';
+var isNocturnalMeow:Bool = PlayState.SONG.meta.name == 'Nocturnal Meow';
 
 var maxMisses:Int = 4;
 function create() 
@@ -213,7 +213,7 @@ function postCreate()
 {
     createHealthbar();
 
-    if (PlayState.instance.SONG.meta.name == 'Nocturnal Meow')
+    if (PlayState.SONG.meta.name == 'Nocturnal Meow')
     {
         dad.setPosition(300,0);
         boyfriend.setPosition(1450,600);
